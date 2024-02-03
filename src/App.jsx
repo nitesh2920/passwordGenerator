@@ -59,7 +59,7 @@ function App() {
   return (
     <>
       <div className="w-full max-w-md mx-auto shadow-md px-4 my-8 rounded-lg text-green-500 bg-gray-600">
-        <h1 className="text-4xl font-semibold text-white mb-4">
+        <h1 className="text-4xl font-semibold text-white mb-4 select-none">
           Password Generator
         </h1>
         <div className="flex shadow  rounded-lg overflow-hidden  mb-4">
@@ -87,7 +87,7 @@ function App() {
                 setLength(e.target.value);
               }}
             />
-            <span className="font-bold">Length: {length}</span>
+            <span className="font-bold select-none">Length: {length}</span>
           </div>
 
           <div className="flex items-center mb-3 sm:mb-0 gap-x-1 ">
@@ -99,7 +99,7 @@ function App() {
                 setNumber((prev) => !prev);
               }}
             />
-            <label htmlFor="checkNumber">Numbers</label>
+            <label htmlFor="checkNumber " >Numbers</label>
           </div>
 
           <div className="flex items-center gap-x-1 mb-3 sm:mb-0">
@@ -111,7 +111,7 @@ function App() {
                 setChar((prev) => !prev);
               }}
             />
-            <label htmlFor="checkChar">Symbol</label>
+            <label htmlFor="checkChar ">Symbol</label>
           </div>
         </div>
       </div>
